@@ -1,0 +1,16 @@
+.venv/
+__pycache__/
+*.pyc
+.pytest_cache/
+
+# Dataset e imágenes crudas: pesado y potencialmente identificable
+data/raw/
+data/landmarks/
+data/processed/
+
+# Modelos entrenados (se regeneran con `python main.py train`) y el
+# modelo de MediaPipe (se descarga solo la primera vez que se usa)
+models/*/
+
+# Material de terceros (CAS): se referencia por URL en fuentes/README.md
+fuentes/*.pdf
